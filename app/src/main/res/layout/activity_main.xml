@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chatview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.ButtonBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="co.intentservice.chatui.sample.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundd"
+        android:alpha="0.1" />
+
+    <co.intentservice.chatui.ChatView
+        android:id="@+id/chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        chatview:backgroundColor="#1DE9E7E7"
+        chatview:bubbleBackgroundRcv="#064985"
+        chatview:bubbleBackgroundSend="@color/white"
+        chatview:bubbleElevation="elevated"
+        chatview:inputHint="@string/start_typing"
+        chatview:messageTextColorRcv="#FFFFFF"
+        chatview:messageTextColorSend="#5F5E5E" />
+
+</RelativeLayout>
